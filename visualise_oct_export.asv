@@ -1,0 +1,14 @@
+%% Metadata
+% Goal: Visualise the A, B-scan OCT from the exported CSV values %
+% Steps:
+% 1. Plot a CSV 
+% 2. Compare A-scan OCT plot from ThorLabs and our A scan plot for the same sample.
+% 3. Then, figure out how to plot B-scan
+%% 1. Plot a CSV file.
+
+Array = readmatrix('test_oct_data.csv');
+col1 = Array(:, 1);
+col2 = Array(:, 2);
+plot(col1, col2)
+
+%%
